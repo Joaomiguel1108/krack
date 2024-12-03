@@ -1,0 +1,33 @@
+1 - um protocolo que protege todas as redes Wi-Fi protegidas modernas.
+
+2 - Key Reinstallation Attacks
+
+3 - pois o ataque funciona contra todas as redes Wi-Fi protegidas modernas
+
+4 - a relação entre os dois é que um invasor dentro do alcance de uma vítima pode explorar as fraquezas do WPA2, usando ataques de reinstalação de chaves (KRACKs).
+	
+5 - Esse handshake é executado quando um cliente quer se juntar a uma rede Wi-Fi protegida e é usado para confirmar que tanto o cliente quanto o ponto de acesso possuem as credenciais corretas (por exemplo, a senha pré-compartilhada da rede). 
+
+6 -  informações confidenciais, como números de cartão de crédito, senhas, mensagens de bate-papo, e-mails, fotos e assim por diante.
+
+7 -  Isso ocorre porque o Android e o Linux podem ser enganados para (re)instalar uma chave de criptografia totalmente zero
+
+8 - 
+
+9 - 
+
+10 - Se a vítima usar o protocolo de criptografia WPA-TKIP ou GCMP, em vez de AES-CCMP, o impacto será especialmente catastrófico. Contra esses protocolos de criptografia, a reutilização de nonce permite que um adversário não apenas descriptografe, mas também forje e injete pacotes . Além disso, como o GCMP usa a mesma chave de autenticação em ambas as direções de comunicação, e essa chave pode ser recuperada se os nonces forem reutilizados, ela é especialmente afetada
+
+11 - Para evitar o ataque, os usuários devem atualizar os produtos afetados assim que as atualizações de segurança estiverem disponíveis.
+
+12 - 
+
+13 - 
+
+14 - 
+
+15 - Durante nossa pesquisa inicial, descobrimos que Android, Linux, Apple, Windows, OpenBSD, MediaTek, Linksys e outros são todos afetados por alguma variante dos ataques.
+
+16 -  Quando um cliente se junta a uma rede, ele executa o handshake de 4 vias para negociar uma nova chave de criptografia. Ele instalará essa chave após receber a mensagem 3 do handshake de 4 vias. Uma vez que a chave é instalada, ela será usada para criptografar quadros de dados normais usando um protocolo de criptografia. No entanto, como as mensagens podem ser perdidas ou descartadas, o Ponto de Acesso (AP) retransmitirá a mensagem 3 se não receber uma resposta apropriada como confirmação. Como resultado, o cliente pode receber a mensagem 3 várias vezes. Cada vez que receber essa mensagem, ele reinstalará a mesma chave de criptografia e, assim, redefinirá o número do pacote de transmissão incremental (nonce) e o contador de repetição de recebimento usado pelo protocolo de criptografia. 
+
+17 - 
